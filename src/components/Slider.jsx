@@ -15,6 +15,7 @@ const Slider = () => {
 
   return (
     <div className="relative overflow-hidden w-full h-[100vh]">
+      
       <div
         className="relative flex w-full h-full transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${slide * 100}%)` }}
@@ -22,10 +23,13 @@ const Slider = () => {
         {slides.map((img, index) => (
           <img key={index} src={img} className="w-full grayscale h-[100vh] flex-shrink-0 object-cover" />
         ))}
-        <div className="absolute bg-black opacity-50 inset-0"></div>
       </div>
+
       
-      <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[60px] font-black text-white text-center">
+      <div className="absolute bg-black opacity-50 inset-0 z-10"></div>
+
+     
+      <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[60px] font-black text-white text-center z-20">
         Your Statewide Dispatch Service
       </span>
     </div>
