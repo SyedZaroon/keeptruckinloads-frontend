@@ -4,21 +4,21 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='flex items-center justify-between'>
+    <div className='flex items-center justify-between px-3 relative z-50 '>
       <div>
         <img src={assets.logo} />
       </div>
 
       <div className='flex items-center gap-3'>
-        <Link to="" className=' border-t-2 border-t-transparent hover:border-t-2 hover:border-t-black' >Home</Link> 
-        <Link to="" className=' border-t-2 border-t-transparent hover:border-t-2 hover:border-t-black' >About us</Link> 
-        <Link to="" className=' border-t-2 border-t-transparent hover:border-t-2 hover:border-t-black' >Services</Link> 
-        <Link to="" className=' border-t-2 border-t-transparent hover:border-t-2 hover:border-t-black' >Testimonials</Link> 
-        <Link to="" className=' border-t-2 border-t-transparent hover:border-t-2 hover:border-t-black' >Contact Us</Link> 
+        <Link to="" className=' border-t-2 border-t-transparent text-white  hover:border-t-2 hover:border-t-white' >Home</Link> 
+        <Link to="" className=' border-t-2 border-t-transparent text-white  hover:border-t-2 hover:border-t-white' >About us</Link> 
+        <Link to="" className=' border-t-2 border-t-transparent text-white  hover:border-t-2 hover:border-t-white' >Services</Link> 
+        <Link to="" className=' border-t-2 border-t-transparent text-white  hover:border-t-2 hover:border-t-white' >Testimonials</Link> 
+        <Link to="" className=' border-t-2 border-t-transparent text-white  hover:border-t-2 hover:border-t-white' >Contact Us</Link> 
       </div>
 
       <div>
-        <button className='p-2 border-2 hover:shadow-md hover:translate-y-1 transition-all'>Get a Load</button>
+        <button className='p-2 border-2 hover:shadow-md hover:translate-y-1 transition-all text-white'>Get a Load</button>
       </div>
 
     </div>

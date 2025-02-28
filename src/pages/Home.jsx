@@ -5,7 +5,9 @@ import Slider from '../components/Slider'
 const Home = () => {
   return (
     <div>
-         <Slider />
+      <div className='-mt-[130px] '>
+        <Slider />
+      </div>
     </div>
   )
 }
