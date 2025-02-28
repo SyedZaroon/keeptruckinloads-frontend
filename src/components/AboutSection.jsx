@@ -1,4 +1,5 @@
 import React from "react";
+import { assets } from "../utils/assets";
 
 const AboutSection = () => {
   return (
@@ -14,7 +15,7 @@ const AboutSection = () => {
           back-office support. Our goal is to streamline your operations,
           increase your revenue, and improve your overall trucking experience.
         </p>
-        <div className="grid md:grid-cols-3 gap-6 mt-8">
+        <div className="grid md:grid-cols-3 gap-6 mt-8 mx-20">
           <div className="border p-6 rounded-lg shadow-md bg-white">
             <div className="flex justify-center mb-4 text-blue-600 text-4xl">
               ⚡
@@ -71,40 +72,21 @@ const AboutSection = () => {
           </div>
           <div className="md:w-1/2 flex justify-center p-6">
             <img
-              src="https://via.placeholder.com/300"
+              src={assets.review}
               alt="Client"
               className="rounded-lg shadow-lg"
             />
           </div>
         </div>
-        <div className="flex justify-center items-center gap-6 mt-8">
-          <img
-            src="https://via.placeholder.com/80"
-            alt="logo1"
-            className="h-12"
-          />
-          <img
-            src="https://via.placeholder.com/80"
-            alt="logo2"
-            className="h-12"
-          />
-          <img
-            src="https://via.placeholder.com/80"
-            alt="logo3"
-            className="h-12"
-          />
-          <img
-            src="https://via.placeholder.com/80"
-            alt="logo4"
-            className="h-12"
-          />
-          <img
-            src="https://via.placeholder.com/80"
-            alt="logo5"
-            className="h-12"
-          />
-        </div>
       </section>
+      <div className="flex justify-center items-center gap-6 py-6 mt-8 bg-white">
+        <img src={assets.helpinghand} alt="logo1" className="h-14" />
+        <img src={assets.logo2} alt="logo2" className="h-14" />
+        <img src={assets.logo3} alt="logo3" className="h-14" />
+        <img src={assets.earth4} alt="logo4" className="h-14" />
+        <img src={assets.lotusflowe5} alt="logo4" className="h-14" />
+        <img src={assets.rocket6} alt="logo5" className="h-14" />
+      </div>
     </>
   );
 };

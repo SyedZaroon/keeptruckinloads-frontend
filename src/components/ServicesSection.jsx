@@ -1,4 +1,5 @@
 import React from "react";
+import { assets } from "../utils/assets";
 
 const ServicesSection = () => {
   return (
@@ -6,11 +7,11 @@ const ServicesSection = () => {
       <h2 className="text-3xl font-bold text-blue-600 flex justify-center items-center gap-2">
         <span className="text-4xl">&#9776;</span> OUR SERVICES
       </h2>
-      <div className="grid md:grid-cols-3 gap-6 mt-8">
+      <div className="grid md:grid-cols-3 gap-6 mt-8 mx-20">
         {/* Shipping Solutions */}
         <div className="border p-6 rounded-lg shadow-md bg-white">
           <img
-            src="/images/shipping.jpg"
+            src={assets.post1}
             alt="Shipping Solutions"
             className="w-full h-40 object-cover rounded"
           />
@@ -25,7 +26,7 @@ const ServicesSection = () => {
         {/* Partnerships */}
         <div className="border p-6 rounded-lg shadow-md bg-white">
           <img
-            src="/images/partnership.jpg"
+            src={assets.post2}
             alt="Partnerships"
             className="w-full h-40 object-cover rounded"
           />
@@ -38,7 +39,7 @@ const ServicesSection = () => {
         {/* Freight Safety */}
         <div className="border p-6 rounded-lg shadow-md bg-white">
           <img
-            src="/images/freight.jpg"
+            src={assets.post3}
             alt="Freight Safety"
             className="w-full h-40 object-cover rounded"
           />

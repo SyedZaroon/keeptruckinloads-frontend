@@ -1,11 +1,14 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 import Slider from "../components/Slider";
+import AboutSection from "./../components/AboutSection";
+import ServicesSection from "./../components/ServicesSection";
 
 const Home = () => {
   return (
     <div>
       <Slider />
+      <AboutSection />
+      <ServicesSection />
     </div>
   );
 };
