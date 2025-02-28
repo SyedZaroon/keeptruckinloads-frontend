@@ -1,15 +1,13 @@
-import React from 'react'
-import NavBar from '../components/NavBar'
-import Slider from '../components/Slider'
+import React from "react";
+import NavBar from "../components/NavBar";
+import Slider from "../components/Slider";
 
 const Home = () => {
   return (
     <div>
-      <div className='-mt-[130px] '>
-        <Slider />
-      </div>
+         <Slider />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
