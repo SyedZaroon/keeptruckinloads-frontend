@@ -5,8 +5,10 @@ import ServicesSection from "./../components/ServicesSection";
 
 const Home = () => {
   return (
-    <div>
+    <div className="mt-[-130px]">
       <Slider />
+      <AboutSection />
+      <ServicesSection />
     </div>
   );
 };
