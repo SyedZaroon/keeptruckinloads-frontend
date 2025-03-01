@@ -14,7 +14,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const NavBar = () => {
   return (
-    <div className="flex justify-between items-center border-b-2 border-white w-[944px] m-auto my-3 z-50 relative ">
+    <div className="md:flex justify-between items-center border-b-2 border-white max-w-[944px] m-auto my-3 z-50 relative px-4 hidden ">
       <div className="flex items-center gap-2">
         <FaPhoneAlt className="text-white" />
         <span className="text-white">+888-258-5623</span>
