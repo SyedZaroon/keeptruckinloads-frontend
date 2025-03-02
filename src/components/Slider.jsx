@@ -15,6 +15,14 @@ const Slider = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const handleScroll = () => {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: "smooth",
+    });
+  }
+
+  
   return (
     <div className="relative overflow-hidden w-full h-screen">
       {/* Slider Container */}
@@ -35,7 +43,7 @@ const Slider = () => {
       
       <div className="absolute inset-0 bg-black/60 z-10"></div>
 
-      <IoIosArrowDown className="z-30 absolute bottom-10 lg:bottom-0 left-1/2 text-white text-5xl transform -translate-x-1/2  " />
+      <IoIosArrowDown onClick={handleScroll} className="z-30 absolute bottom-10 lg:bottom-0 left-1/2 text-white text-5xl transform -translate-x-1/2  " />
       
       
       <div className="flex lg:hidden items-center gap-[15px] z-30 absolute bottom-3 left-1/2 transform -translate-x-1/2 ">
