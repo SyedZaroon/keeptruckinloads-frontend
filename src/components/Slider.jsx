@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { assets } from "../utils/assets";
+import { IoIosArrowDown } from "react-icons/io";
+import { FaFacebookF, FaGooglePlusG, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const Slider = () => {
   const slides = [assets.slider1, assets.slider2, assets.slider3];
@@ -14,7 +16,8 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-full h-[680px]">
+    <div className="relative overflow-hidden w-full h-screen">
+      {/* Slider Container */}
       <div
         className="relative flex w-full h-full transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${slide * 100}%)` }}
@@ -23,19 +26,28 @@ const Slider = () => {
           <img
             key={index}
             src={img}
-            className="w-full h-full flex-shrink-0 object-cover"
+            alt={`Slide ${index + 1}`}
+            className="w-full h-full flex-shrink-0 object-cover grayscale "
           />
         ))}
       </div>
 
-      {/* Overlay for Better Text Visibility */}
-      <div className="absolute bg-black opacity-50 inset-0 z-10"></div>
+      
+      <div className="absolute inset-0 bg-black/60 z-10"></div>
 
-      {/* Responsive Text Overlay */}
-      <span
-        className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-medium z-20 
-        text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] leading-tight max-w-[90%] uppercase"
-      >
+      <IoIosArrowDown className="z-30 absolute bottom-10 lg:bottom-0 left-1/2 text-white text-5xl transform -translate-x-1/2  " />
+      
+      
+      <div className="flex lg:hidden items-center gap-[15px] z-30 absolute bottom-3 left-1/2 transform -translate-x-1/2 ">
+              <FaFacebookF className="text-white" />
+              <FaTwitter className="text-white" />
+              <FaInstagram className="text-white" />
+              <FaGooglePlusG className="text-white" />
+              <FaLinkedinIn className="text-white" />
+              <FaWhatsapp className="text-white" />
+            </div>
+     
+      <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold z-20 text-4xl sm:text-5xl md:text-6xl lg:text-6xl leading-tight w-[90%] md:w-[910px] uppercase">
         Your State wide Dispatch Service
       </span>
     </div>
