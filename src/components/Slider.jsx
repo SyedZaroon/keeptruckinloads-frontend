@@ -24,7 +24,7 @@ const Slider = () => {
 
   
   return (
-    <div className="relative overflow-hidden w-full h-screen">
+    <div className="relative overflow-hidden w-full h-[108vh] md:h-[102vh] " >
       {/* Slider Container */}
       <div
         className="relative flex w-full h-full transition-transform duration-1000 ease-in-out"
