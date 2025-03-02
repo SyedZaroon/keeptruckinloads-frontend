@@ -5,11 +5,11 @@ const AboutSection = () => {
   return (
     <>
       {/* ABOUT US SECTION */}
-      <section className="text-center py-12 px-6 bg-white">
-        <h2 className="text-3xl font-bold text-blue-600 flex justify-center items-center gap-2">
-          <span className="text-4xl">&#9776;</span> ABOUT US
+      <section className="text-center py-[70px] px-6 bg-white">
+        <h2 className="text-6xl font-semibold text-blue-600 flex justify-center items-center gap-2">
+          <span className="text-6xl font-bold">&#9776;</span> ABOUT US
         </h2>
-        <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+        <p className="my-8 text-[#5a5c5b] opacity-5 tracking-[-0.03em] max-w-[850px] text-start mx-auto">
           Keeptruckin Loads is your partner in maximizing trucking profits. We
           offer a comprehensive dispatch service, including load sourcing, rate
           negotiation, booking confirmations, fuel surcharge calculations, and
@@ -18,7 +18,7 @@ const AboutSection = () => {
         </p>
 
         {/* Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-4 sm:px-12 md:px-20 lg:px-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 px-4 sm:px-12 md:px-20 lg:px-56">
           {/* Card 1 */}
           <div className="border-2 border-[#006cb7] p-4 shadow-md bg-white rounded-lg">
             <div className="flex justify-center mb-4 text-blue-600 text-4xl">
@@ -28,7 +28,8 @@ const AboutSection = () => {
               TIMELY DELIVERY
             </h3>
             <p className="mt-2 text-[#006cb7] text-center">
-              We prioritize efficient and on-time deliveries, ensuring customer
+              We prioritize efficient and on-time deliveries, building strong
+              relationships with our carriers and ensuring customer
               satisfaction.
             </p>
           </div>
@@ -42,8 +43,8 @@ const AboutSection = () => {
               NO STATE LIMITATIONS
             </h3>
             <p className="mt-2 text-[#006cb7] text-center">
-              We connect you with loads across the United States, expanding your
-              reach.
+              We connect you with loads across the entire United States,
+              expanding your reach and maximizing your earning potential.
             </p>
           </div>
 
@@ -56,20 +57,20 @@ const AboutSection = () => {
               24/7 SUPPORT
             </h3>
             <p className="mt-2 text-[#006cb7] text-center">
-              Our team is always available to assist you with any questions or
-              concerns.
+              Our dedicated team is always available to assist you with any
+              questions or concerns, ensuring you're never alone on the road.
             </p>
           </div>
         </div>
       </section>
 
       {/* REVIEW SECTION */}
-      <section className="py-12 px-6 bg-gray-100">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <section className="w-full">
+        <div className="flex flex-col md:flex-row">
           {/* Review Text */}
-          <div className="md:w-1/2 bg-blue-600 text-white px-6 py-12 md:px-8 md:py-16 rounded-lg">
+          <div className="md:w-1/2 bg-blue-600 text-white">
             <h2 className="text-2xl md:text-3xl font-bold text-center md:text-left">
-              &#8220;Fantastic Service&#8221;
+              Fantastic Service
             </h2>
             <p className="mt-4 text-lg text-center md:text-left">
               "Before Keeptruckin Loads, I was constantly juggling load boards,
@@ -87,11 +88,11 @@ const AboutSection = () => {
           </div>
 
           {/* Review Image */}
-          <div className="md:w-1/2 flex justify-center p-6">
+          <div className="md:w-1/2 flex">
             <img
               src={assets.review}
               alt="Client"
-              className="shadow-lg max-w-full h-auto rounded-lg"
+              className="shadow-lg max-w-full h-auto"
             />
           </div>
         </div>

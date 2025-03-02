@@ -5,7 +5,7 @@ import ServicesSection from "./../components/ServicesSection";
 
 const Home = () => {
   return (
-    <div className="mt-[-130px]">
+    <div className="mt-[-140px]">
       <Slider />
       <AboutSection />
       <ServicesSection />

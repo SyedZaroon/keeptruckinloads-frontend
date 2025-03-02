@@ -14,7 +14,7 @@ const Slider = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden w-full h-screen">
+    <div className="relative overflow-hidden w-full h-[680px]">
       <div
         className="relative flex w-full h-full transition-transform duration-1000 ease-in-out"
         style={{ transform: `translateX(-${slide * 100}%)` }}
@@ -33,10 +33,10 @@ const Slider = () => {
 
       {/* Responsive Text Overlay */}
       <span
-        className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-black z-20 
-        text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] leading-tight max-w-[90%]"
+        className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-medium z-20 
+        text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] leading-tight max-w-[90%] uppercase"
       >
-        Your Statewide Dispatch Service
+        Your State wide Dispatch Service
       </span>
     </div>
   );
