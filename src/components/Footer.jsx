@@ -22,34 +22,34 @@ const Footer = () => {
 
       <div className="relative z-10 p-4 ">
         <div className="my-6">
-          <h2 className="flex items-center justify-center text-center gap-2 text-[52px] font-bold text-white">
+          <h2 className="flex items-center justify-center text-center gap-1 text-[30px] font-bold text-white md:text-[50px] ">
             <FaBars />
             <span>Get in Touch</span>
           </h2>
 
-          <div className="flex gap-5 justify-center items-center mt-5">
+          <div className="flex flex-col gap-5 justify-center items-center mt-5 lg:flex-row ">
             <img src={assets.logo} className="w-[208px]" alt="Logo" />
 
-            <div className="flex justify-center items-center gap-10">
-              <div className="flex gap-5 items-center">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+              <div className="flex flex-col md:flex-row justify-center gap-5 items-center">
                 <FaEnvelope className="text-[28px] text-[#006CB7]" />
-                <div className="flex flex-col text-white text-sm">
+                <div className="flex justify-center items-center md:items-start flex-col text-white text-sm">
                   <span>Email</span>
                   <a href="">info@ktloads.com</a>
                 </div>
               </div>
 
-              <div className="flex gap-5 items-center">
+              <div className="flex flex-col md:flex-row justify-center gap-5 items-center">
                 <FaPhone className="text-[28px] text-[#006CB7]" />
-                <div className="flex flex-col text-white text-sm">
+                <div className="flex justify-center items-center md:items-start flex-col text-white text-sm ">
                   <span>Phone</span>
                   <a href="">+888-258-5623</a>
                 </div>
               </div>
 
-              <div className="flex gap-5 items-center">
+              <div className="flex flex-col md:flex-row justify-center gap-5 items-center">
                 <FaClock className="text-[28px] text-[#006CB7]" />
-                <div className="flex flex-col text-white text-sm">
+                <div className="flex justify-center items-center md:items-start flex-col text-white text-sm">
                   <span>Opening Time</span>
                   <p>Mo – Fr: 8am – 5pm</p>
                 </div>
@@ -57,10 +57,10 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-5 justify-center items-center mt-5">
+          <div className="flex flex-col md:flex-row gap-5 justify-center items-center pt-5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d53084.35163011842!2d-118.281988!3d33.740712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd3639f8a0fad5%3A0x120090cd835a1606!2s425%20S%20Palos%20Verdes%20St%2C%20San%20Pedro%2C%20CA%2090731!5e0!3m2!1sen!2sus!4v1740756680781!5m2!1sen!2sus"
-              className="h-[450px] border-0 w-[464px] "
+              className="h-[450px] border-0 max-w-[464px] "
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -68,7 +68,7 @@ const Footer = () => {
 
             <div>
               <form action="" className="flex flex-col gap-7">
-                <div className="flex gap-3">
+                <div className="flex gap-10 flex-col md:flex-row">
                   <input
                     type="name"
                     placeholder="Name"
@@ -80,7 +80,7 @@ const Footer = () => {
                     className=" bg-transparent focus:outline-none border-b-2 border-dotted text-white "
                   />
                 </div>
-                <div className="flex gap-3">
+                <div className="flex gap-10 flex-col">
                   <input
                     type="tel"
                     placeholder="Phone"
@@ -142,8 +142,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#3A3C3B] relative z-10 p-4 flex justify-around items-center  ">
-        <div className="flex gap-2 text-white">
+      <div className="bg-[#3A3C3B] relative z-10 p-4 flex justify-around items-center flex-wrap gap-5 ">
+        <div className="flex gap-2 text-white text-sm ">
           <span>© KeepTruckin Loads</span>
           <a
             href=""

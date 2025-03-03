@@ -137,13 +137,13 @@ const AboutSection = () => {
       </section>
 
       {/* LOGOS SECTION */}
-      <div className="flex flex-wrap justify-center items-center gap-10 py-6 mt-8 bg-white px-4 sm:px-8">
-        <img src={assets.helpinghand} alt="logo1" className="h-12 md:h-14" />
-        <img src={assets.logo2} alt="logo2" className="h-12 md:h-14" />
-        <img src={assets.logo3} alt="logo3" className="h-12 md:h-14" />
-        <img src={assets.earth4} alt="logo4" className="h-12 md:h-14" />
-        <img src={assets.lotusflowe5} alt="logo5" className="h-12 md:h-14" />
-        <img src={assets.rocket6} alt="logo6" className="h-12 md:h-14" />
+      <div className="flex flex-wrap justify-center items-center gap-10 py-12  bg-white px-4 sm:px-8">
+        <img src={assets.helpinghand} alt="logo1" className=" w-[151px] h-[91px] object-contain " />
+        <img src={assets.logo2} alt="logo2" className=" w-[151px] h-[91px] object-contain " />
+        <img src={assets.logo3} alt="logo3" className=" w-[151px] h-[91px] object-contain " />
+        <img src={assets.earth4} alt="logo4" className=" w-[151px] h-[91px] object-contain " />
+        <img src={assets.lotusflowe5} alt="logo5" className=" w-[151px] h-[91px] object-contain " />
+        <img src={assets.rocket6} alt="logo6" className=" w-[151px] h-[91px] object-contain " />
       </div>
     </>
   );
