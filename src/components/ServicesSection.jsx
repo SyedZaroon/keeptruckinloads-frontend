@@ -6,33 +6,37 @@ const ServicesSection = () => {
     <>
       {/* HERO SECTION */}
       <section
-        className="relative min-h-[80vh] md:h-screen bg-cover bg-center flex items-center justify-center text-white px-4 sm:px-8"
+        className="relative min-h-[150vh] md:h-screen bg-cover bg-center flex items-center justify-center text-white px-4 sm:px-8"
         style={{ backgroundImage: `url(${assets.footerbg})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative text-center">
           <img
             src={assets.logo}
-            className="h-20 md:h-28 my-6 mx-auto"
+            className="h-20 md:h-48 my-6 mx-auto"
             alt="logo"
           />
-          <h1 className="text-4xl md:text-7xl font-bold leading-tight">
+          <h1 className="text-4xl text-[#E1E1E1] pt-44 md:text-7xl font-bold leading-tight">
             STATES WIDE <br className="hidden md:block" /> DISPATCH
           </h1>
-          <h2 className="text-2xl md:text-3xl mt-2">SERVICE</h2>
+          <div className="pt-12">
+            <button className="px-[10px] py-[6px] font-medium border-[1px] hover:shadow-md hover:translate-y-1 transition-all text-white">
+              GET A LOAD
+            </button>
+          </div>
         </div>
       </section>
 
       {/* SERVICES SECTION */}
       <section className="text-center py-12 px-6 bg-white">
-        <h2 className="text-3xl font-bold text-blue-600 flex justify-center items-center gap-2">
-          <span className="text-4xl">&#9776;</span> OUR SERVICES
+        <h2 className="text-6xl font-bold text-blue-600 flex justify-center items-center gap-2 py-8">
+          <span className="text-6xl">&#9776;</span> OUR SERVICES
         </h2>
 
         {/* Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 px-4 sm:px-12 md:px-20 lg:px-32">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 px-2 sm:px-12 md:px-20 lg:px-56">
           {/* Shipping Solutions */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="bg-white shadow-lg  overflow-hidden">
             <img
               src={assets.post1}
               alt="Shipping Solutions"
@@ -50,7 +54,7 @@ const ServicesSection = () => {
           </div>
 
           {/* Partnerships */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="bg-white shadow-lg  overflow-hidden">
             <img
               src={assets.post2}
               alt="Partnerships"
@@ -66,7 +70,7 @@ const ServicesSection = () => {
           </div>
 
           {/* Freight Safety */}
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+          <div className="bg-white shadow-lg  overflow-hidden">
             <img
               src={assets.post3}
               alt="Freight Safety"
