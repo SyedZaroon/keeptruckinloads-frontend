@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../utils/assets";
+import { VscThreeBars } from "react-icons/vsc";
 
 const ServicesSection = () => {
   return (
@@ -29,9 +30,10 @@ const ServicesSection = () => {
 
       {/* SERVICES SECTION */}
       <section className="text-center py-12 px-6 bg-white">
-        <h2 className="text-6xl font-bold text-blue-600 flex justify-center items-center gap-2 py-8">
-          <span className="text-6xl">&#9776;</span> OUR SERVICES
-        </h2>
+        <h2 className="text-[44px] lg:text-[64px] font-bold text-[#006CB7] flex justify-center items-center ">
+          <VscThreeBars className="stroke-[0.5px] rounded-md " />
+          <span className="lg:txt-[64px] text-[44px] font-bold leading-[44px] "> Our Services</span>
+                </h2>
 
         {/* Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 px-2 sm:px-12 md:px-20 lg:px-56">

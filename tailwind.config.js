@@ -11,6 +11,11 @@ export default {
     //   laptop: "1024px",
     //   laptopl: "1440px",
     // },
+
+    fontFamily: {
+      heading: ["Lato", "sans-serif"],
+      text: ["Open Sans", "sans-serif"],
+    },
   },
   plugins: [],
 };

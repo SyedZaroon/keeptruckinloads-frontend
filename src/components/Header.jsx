@@ -13,37 +13,37 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between px-3 relative z-50 md:my-0 my-4">
       <div>
-        <img src={assets.logo} className="h-[75px]" alt="Logo" />
+        <img src={assets.logo} className="h-[82px]" alt="Logo" />
       </div>
 
       <div className="md:flex hidden items-center gap-4 font-medium uppercase">
         <Link
           to="/"
-          className="text-white border-t-2 border-transparent hover:border-t-2 hover:border-white"
+          className="text-white border-t-2 font-bold border-transparent hover:border-t-2 hover:border-white"
         >
           Home
         </Link>
         <Link
           to="/aboutus"
-          className="text-white border-t-2 border-transparent hover:border-t-2 hover:border-white"
+          className="text-white border-t-2 font-bold border-transparent hover:border-t-2 hover:border-white"
         >
           About Us
         </Link>
         <Link
           to="/services"
-          className="text-white border-t-2 border-transparent hover:border-t-2 hover:border-white"
+          className="text-white border-t-2 font-bold border-transparent hover:border-t-2 hover:border-white"
         >
           Services
         </Link>
         <Link
           to="/testimonials"
-          className="text-white border-t-2 border-transparent hover:border-t-2 hover:border-white"
+          className="text-white border-t-2 font-bold border-transparent hover:border-t-2 hover:border-white"
         >
           Testimonials
         </Link>
         <Link
           to="/contact"
-          className="text-white border-t-2 border-transparent hover:border-t-2 hover:border-white"
+          className="text-white border-t-2 font-bold border-transparent hover:border-t-2 hover:border-white"
         >
           Contact
         </Link>
@@ -76,35 +76,35 @@ const Header = () => {
         <div className="flex flex-col items-center gap-5">
           <Link
             to="/"
-            className="text-white border-t-2 border-transparent hover:border-t-2 hover:border-white"
+            className="text-white border-t-2 font-bold border-transparent hover:border-t-2 hover:border-white"
             onClick={toggleMenu}
           >
             Home
           </Link>
           <Link
             to="/aboutus"
-            className="text-white border-t-2 border-transparent hover:border-t-2 hover:border-white"
+            className="text-white border-t-2 font-bold border-transparent hover:border-t-2 hover:border-white"
             onClick={toggleMenu}
           >
             About Us
           </Link>
           <Link
             to="/services"
-            className="text-white border-t-2 border-transparent hover:border-t-2 hover:border-white"
+            className="text-white border-t-2 font-bold border-transparent hover:border-t-2 hover:border-white"
             onClick={toggleMenu}
           >
             Services
           </Link>
           <Link
             to="/testimonials"
-            className="text-white border-t-2 border-transparent hover:border-t-2 hover:border-white"
+            className="text-white border-t-2 font-bold border-transparent hover:border-t-2 hover:border-white"
             onClick={toggleMenu}
           >
             Testimonials
           </Link>
           <Link
             to="/contact"
-            className="text-white border-t-2 border-transparent hover:border-t-2 hover:border-white"
+            className="text-white border-t-2 font-bold border-transparent hover:border-t-2 hover:border-white"
             onClick={toggleMenu}
           >
             Contact Us

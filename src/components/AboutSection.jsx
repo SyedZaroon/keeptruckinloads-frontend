@@ -1,13 +1,14 @@
 import React from "react";
 import { assets } from "../utils/assets";
+import { VscThreeBars } from "react-icons/vsc";
 
 const AboutSection = () => {
   return (
     <>
       {/* ABOUT US SECTION */}
       <section className="text-center py-[70px] px-6 bg-white">
-        <h2 className="text-6xl font-semibold text-blue-600 flex justify-center items-center gap-2">
-          <span className="text-6xl font-bold">&#9776;</span> ABOUT US
+        <h2 className="text-[44px] lg:text-[64px] font-bold text-[#006CB7] flex justify-center items-center gap-2">
+          <span className="lg:text-[64px] text-[44px] font-bold"><VscThreeBars className="stroke-[0.5px] rounded-md " /></span> ABOUT US
         </h2>
         <p className="my-8 text-[#5a5c5b] font-thin  max-w-[850px] text-start mx-auto">
           Keeptruckin Loads is your partner in maximizing trucking profits. We
@@ -20,9 +21,9 @@ const AboutSection = () => {
         {/* Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 px-2 sm:px-12 md:px-20 lg:px-56">
           {/* Card 1 */}
-          <div className=" relative border-[2px] border-[#006cb7] p-4 shadow-md bg-white ">
+          <div className=" relative border-[3px] border-double border-[#006cb7] p-4 shadow-md bg-white ">
             <div className="pt-5">
-              <h3 className="text-2xl font-semibold text-blue-600 text-center">
+              <h3 className="text-2xl font-semibold text-[#006CB7] text-center">
                 TIMELY DELIVERY
               </h3>
               <p className="mt-2 text-[#006cb7] font-thin text-center">
@@ -46,9 +47,9 @@ const AboutSection = () => {
           </div>
 
           {/* Card 2 */}
-          <div className=" relative border-[2px] border-[#006cb7] p-4 shadow-md bg-white ">
+          <div className=" relative border-[3px] border-double border-[#006cb7] p-4 shadow-md bg-white ">
             <div className="pt-5">
-              <h3 className="text-2xl font-semibold text-blue-600 text-center leading-6">
+              <h3 className="text-2xl font-semibold text-[#006CB7] text-center leading-6">
                 NO STATE LIMITATIONS
               </h3>
               <p className="mt-2 text-[#006cb7] font-thin text-center">
@@ -71,9 +72,9 @@ const AboutSection = () => {
           </div>
 
           {/* Card 3 */}
-          <div className=" relative border-[2px] border-[#006cb7] p-4 shadow-md bg-white ">
+          <div className=" relative border-[3px] border-double border-[#006cb7] p-4 shadow-md bg-white ">
             <div className="pt-5">
-              <h3 className="text-2xl font-semibold text-blue-600 text-center">
+              <h3 className="text-2xl font-semibold text-[#006CB7] text-center">
                 24/7 SUPPORT
               </h3>
               <p className="mt-2 text-[#006cb7] font-thin text-center">
@@ -137,8 +138,8 @@ const AboutSection = () => {
       </section>
 
       {/* LOGOS SECTION */}
-      <div className="flex flex-wrap justify-center items-center gap-10 py-12  bg-white px-4 sm:px-8">
-        <img src={assets.helpinghand} alt="logo1" className=" w-[151px] h-[91px] object-contain " />
+      <div className="grid grid-cols-2 md:grid-cols-6 justify-items-center items-center py-12  bg-white px-4 sm:px-8">
+        <img src={assets.helpinghand} alt="logo1 " className=" w-[151px] h-[91px] object-contain " />
         <img src={assets.logo2} alt="logo2" className=" w-[151px] h-[91px] object-contain " />
         <img src={assets.logo3} alt="logo3" className=" w-[151px] h-[91px] object-contain " />
         <img src={assets.earth4} alt="logo4" className=" w-[151px] h-[91px] object-contain " />
