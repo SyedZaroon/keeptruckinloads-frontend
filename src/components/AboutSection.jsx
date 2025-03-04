@@ -1,6 +1,7 @@
 import React from "react";
 import { assets } from "../utils/assets";
 import { VscThreeBars } from "react-icons/vsc";
+import TestimonialSection from "./TestimonialSection";
 
 const AboutSection = () => {
   return (
@@ -99,43 +100,7 @@ const AboutSection = () => {
       </section>
 
       {/* REVIEW SECTION */}
-      <section className="w-full">
-        <div className="flex flex-col md:flex-row">
-          {/* Review Text */}
-          <div className="w-1/2 bg-[#006CB7] text-white p-16">
-            <h2 className="text-2xl md:text-4xl font-bold text-center md:text-left">
-              Fantastic Service
-            </h2>
-            <p className="mt-4 text-lg text-center md:text-left ">
-              "Before Keeptruckin Loads, I was constantly juggling load boards,
-              negotiating rates, and dealing with paperwork. It was exhausting
-              and time-consuming. Since partnering with them, my business has
-              seen a significant improvement. Their team of dispatchers are
-              incredibly efficient, finding me high-paying loads consistently. I
-              no longer have to worry about empty miles or low-paying freight.
-              Keeptruckin Loads has truly taken a weight off my shoulders,
-              allowing me to focus on what I do best: driving. I highly
-              recommend their services to any truck owner looking to increase
-              their revenue and streamline their operations."
-            </p>
-            <p className="mt-6 font-semibold text-center md:text-left">
-              Harrison Cole
-            </p>
-            <p className="italic text-center md:text-left">
-              Owner, 9 Tales Trucking
-            </p>
-          </div>
-
-          {/* Review Image */}
-          <div className="w-1/2 flex">
-            <img
-              src={assets.review}
-              alt="Client"
-              className="shadow-lg w-full"
-            />
-          </div>
-        </div>
-      </section>
+      <TestimonialSection />
 
       {/* LOGOS SECTION */}
       <div className="grid grid-cols-2 md:grid-cols-6 justify-items-center items-center py-12  bg-white px-4 sm:px-8">
