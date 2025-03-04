@@ -14,7 +14,7 @@ const Services = () => {
             <img
               src={assets.post1}
               alt="Shipping Solutions"
-              className="w-full h-40 object-cover rounded"
+              className="w-80 h-52  object-cover rounded"
             />
             <h3 className="mt-4 text-xl font-bold text-blue-600">
               Shipping Solutions
