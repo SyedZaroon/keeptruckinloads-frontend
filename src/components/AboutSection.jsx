@@ -9,7 +9,10 @@ const AboutSection = () => {
       {/* ABOUT US SECTION */}
       <section className="text-center py-[70px] px-6 bg-white">
         <h2 className="text-[44px] lg:text-[64px] font-bold text-[#006CB7] flex justify-center items-center gap-2">
-          <span className="lg:text-[64px] text-[44px] font-bold"><VscThreeBars className="stroke-[0.5px] rounded-md " /></span> ABOUT US
+          <span className="lg:text-[64px] text-[44px] font-bold">
+            <VscThreeBars className="stroke-[0.5px] rounded-md " />
+          </span>{" "}
+          ABOUT US
         </h2>
         <p className="my-8 text-[#5a5c5b] font-thin  max-w-[850px] text-start mx-auto">
           Keeptruckin Loads is your partner in maximizing trucking profits. We
@@ -103,13 +106,39 @@ const AboutSection = () => {
       <TestimonialSection />
 
       {/* LOGOS SECTION */}
-      <div className="grid grid-cols-2 md:grid-cols-6 justify-items-center items-center py-12  bg-white px-4 sm:px-8">
-        <img src={assets.helpinghand} alt="logo1 " className=" w-[151px] h-[91px] object-contain " />
-        <img src={assets.logo2} alt="logo2" className=" w-[151px] h-[91px] object-contain " />
-        <img src={assets.logo3} alt="logo3" className=" w-[151px] h-[91px] object-contain " />
-        <img src={assets.earth4} alt="logo4" className=" w-[151px] h-[91px] object-contain " />
-        <img src={assets.lotusflowe5} alt="logo5" className=" w-[151px] h-[91px] object-contain " />
-        <img src={assets.rocket6} alt="logo6" className=" w-[151px] h-[91px] object-contain " />
+      <div className="flex justify-center items-center py-10 bg-white px-16">
+        <div className="flex flex-wrap justify-center  max-w-[1200px]">
+          <img
+            src={assets.helpinghand}
+            alt="logo1"
+            className="w-[151px] h-[91px] object-contain"
+          />
+          <img
+            src={assets.logo2}
+            alt="logo2"
+            className="w-[151px] h-[91px] object-contain"
+          />
+          <img
+            src={assets.logo3}
+            alt="logo3"
+            className="w-[151px] h-[91px] object-contain"
+          />
+          <img
+            src={assets.earth4}
+            alt="logo4"
+            className="w-[151px] h-[91px] object-contain"
+          />
+          <img
+            src={assets.lotusflowe5}
+            alt="logo5"
+            className="w-[151px] h-[91px] object-contain"
+          />
+          <img
+            src={assets.rocket6}
+            alt="logo6"
+            className="w-[151px] h-[91px] object-contain"
+          />
+        </div>
       </div>
     </>
   );
