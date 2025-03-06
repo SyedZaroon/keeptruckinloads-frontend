@@ -20,17 +20,17 @@ const Footer = () => {
     >
       <div className="absolute bg-black opacity-80 inset-0"></div>
 
-      <div className="relative z-10 p-4 ">
+      <div className="relative z-10 p-3">
         <div className="my-6">
           <h2 className="flex items-center justify-center text-center gap-1 text-[30px] font-bold text-white md:text-[50px] ">
             <FaBars />
             <span>Get in Touch</span>
           </h2>
 
-          <div className="flex flex-col gap-5 justify-center items-center mt-5 lg:flex-row ">
+          <div className="flex flex-col gap-10 justify-center items-center mt-5 lg:flex-row ">
             <img src={assets.logo} className="w-[208px]" alt="Logo" />
 
-            <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+            <div className="flex flex-col md:flex-row justify-center py-12 items-center gap-16">
               <div className="flex flex-col md:flex-row justify-center gap-5 items-center">
                 <FaEnvelope className="text-[28px] text-[#006CB7]" />
                 <div className="flex justify-center items-center md:items-start flex-col text-white text-sm">
@@ -60,7 +60,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row gap-5 justify-center items-center pt-5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d53084.35163011842!2d-118.281988!3d33.740712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd3639f8a0fad5%3A0x120090cd835a1606!2s425%20S%20Palos%20Verdes%20St%2C%20San%20Pedro%2C%20CA%2090731!5e0!3m2!1sen!2sus!4v1740756680781!5m2!1sen!2sus"
-              className="h-[450px] border-0 max-w-[464px] "
+              className="h-[450px] border-0 max-w-[450px] w-full"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
