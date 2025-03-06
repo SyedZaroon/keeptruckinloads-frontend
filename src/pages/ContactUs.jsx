@@ -3,7 +3,7 @@ import { assets } from '../utils/assets'
 
 const ContactUs = () => {
   return (
-    <div>
+    <>
       
       <div className='bg-[#006CB7] md:p-24 md:flex justify-between md:items-center md:flex-row flex-col p-4 '>
         <div className='md:w-[40%]' >
@@ -16,7 +16,7 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div class="p-8">
+      {/* <div class="p-8">
         <h2 class="text-2xl md:text-4xl font-bold text-center text-gray-900">Need Support?</h2>
         <p class="text-gray-600 text-center mb-6">We've got a plan to fit your needs.</p>
 
@@ -41,14 +41,50 @@ const ContactUs = () => {
             <button type="submit" class="p-2 border-2 hover:shadow-md hover:translate-y-1 transition-all text-black  w-full rounded-lg">SUBMIT</button>
           </div>
         </form>
-      </div>
 
-      {/* <div className='bg-[#006CB7] md:p-10 p-4 '>
-        <h2 className='text-2xl md:text-3xl font-bold text-center text-white ' >Need help? Call our award-winning support team</h2>
       </div> */}
+
+        <div class="bg-gray-200 my-6 p-6 mx-auto  rounded-md shadow-md w-full max-w-xl">
+          <h2 class="text-2xl md:text-4xl font-bold text-left mb-4 ">GET A QUOTE</h2>
+          <form action="#" method="POST" class="space-y-4">
+            
+            <div class="grid grid-cols-2 gap-4">
+              <input type="text" placeholder="Your Name" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]" />            
+            <input type="email" placeholder="Email" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <input type="tel" placeholder="Phone" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]" />
+              <input type="text" placeholder="Based (City/State)" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]" />            
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <input type="text" placeholder="Truck" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]" />
+              <input type="text" placeholder="Preferred states" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <input type="number" placeholder="Preferred weight (lbs)" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]" />
+              <input type="text" placeholder="Wake up/FU" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <input type="text" placeholder="Next Available slot" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]" />
+              <input type="text" placeholder="MC number" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]" />
+              </div>
+
+            <button type="submit" class="bg-[#006CB7] text-white text-center p-2 hover:bg-[#005D9E] cursor-pointer w-full">
+              SEND
+            </button>
+
+          </form>
+        </div>
+        
+
+    
       
       
-    </div>
+    </>
   )
 }
 
