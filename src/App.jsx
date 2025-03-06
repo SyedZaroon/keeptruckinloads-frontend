@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar";
 import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import NavBarBlack from "./components/NavBarBlack"
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   const location = useLocation(); 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
 
       <Footer />

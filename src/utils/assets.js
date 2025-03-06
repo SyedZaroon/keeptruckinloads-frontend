@@ -13,6 +13,7 @@ import review from "/assets/review.jpg";
 import post1 from "/assets/post1.jpg";
 import post2 from "/assets/post2.jpg";
 import post3 from "/assets/post3.jpg";
+import contactimg from "/assets/contact.png";
 
 export const assets = {
   logo,
@@ -30,4 +31,5 @@ export const assets = {
   post1,
   post2,
   post3,
+  contactimg
 };
