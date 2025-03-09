@@ -1,14 +1,64 @@
-import React from "react";
+import React, { useRef } from "react";
 import { assets } from "../utils/assets";
 import { VscThreeBars } from "react-icons/vsc";
 import TestimonialSection from "./TestimonialSection";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger); 
+
 
 const AboutSection = () => {
+
+  const logoSection = useRef(null)
+  const alllogos = useRef(null)
+
+  useGSAP(() => {
+    gsap.from(alllogos.current, {
+      opacity: 0,
+      duration: 0.9,
+      delay:1.5,
+      scrollTrigger: {
+        trigger: logoSection.current,
+        scroll:"body"
+      }
+    })
+  })
+
+
+  const headingRef = useRef(null);
+  const aboutus = useRef(null);
+  const aboutusCards = useRef(null);
+  
+  useGSAP(() => {
+
+    var aboutUsTimeline = gsap.timeline({scrollTrigger: {
+      trigger: aboutus.current,
+      scroll: "body",
+      delay: 1.5
+      
+    }})
+
+    aboutUsTimeline.from(headingRef.current, {
+      x: -3000,
+      duration: 0.9,
+    })
+
+    aboutUsTimeline.from(aboutusCards.current, {
+      opacity: 0,
+      duration: 0.9,
+      
+    })
+
+
+  })
+
+
   return (
     <>
       {/* ABOUT US SECTION */}
-      <section className="text-center py-[70px] px-6 bg-white">
-        <h2 className="text-[44px] lg:text-[64px] font-bold text-[#006CB7] flex justify-center items-center gap-2">
+      <section ref={aboutus} className="text-center py-[70px] px-6 bg-white">
+        <h2 ref={headingRef} className="text-[44px] lg:text-[64px] font-bold text-[#006CB7] flex justify-center items-center gap-2">
           <span className="lg:text-[64px] text-[44px] font-bold">
             <VscThreeBars className="stroke-[0.5px] rounded-md " />
           </span>{" "}
@@ -23,7 +73,7 @@ const AboutSection = () => {
         </p>
 
         {/* Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 px-2 sm:px-12 md:px-20 lg:px-56">
+        <div ref={aboutusCards} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 px-2 sm:px-12 md:px-20 lg:px-56">
           {/* Card 1 */}
           <div className=" relative border-[3px] border-double border-[#006cb7] p-4 shadow-md bg-white ">
             <div className="pt-5">
@@ -106,8 +156,8 @@ const AboutSection = () => {
       <TestimonialSection />
 
       {/* LOGOS SECTION */}
-      <div className="flex justify-center items-center py-10 bg-white px-16">
-        <div className="flex flex-wrap justify-center  max-w-[1200px]">
+      <div ref={logoSection} className="flex justify-center items-center py-10 bg-white px-16">
+        <div ref={alllogos} className="flex flex-wrap justify-center  max-w-[1200px]">
           <img
             src={assets.helpinghand}
             alt="logo1"

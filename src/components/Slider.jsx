@@ -1,9 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { assets } from "../utils/assets";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaFacebookF, FaGooglePlusG, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Slider = () => {
+
+  const sliderheading = useRef(null)
+
+  useGSAP(() => {
+    gsap.from(sliderheading.current, {
+      opacity: 0,
+      duration:2.5,
+      delay:1.5
+    })
+  })
+
+
   const slides = [assets.slider1, assets.slider2, assets.slider3];
   const [slide, setSlide] = useState(0);
 
@@ -55,7 +69,7 @@ const Slider = () => {
               <FaWhatsapp className="text-white" />
             </div>
      
-      <h1 className="absolute left-1/2 top-[60%] transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold z-20 text-4xl sm:text-5xl md:text-6xl lg:text-[64px] leading-tight w-[90%] md:w-[910px] uppercase">
+      <h1 ref={sliderheading} className="absolute left-1/2 top-[60%] transform -translate-x-1/2 -translate-y-1/2 text-white text-center font-bold z-20 text-4xl sm:text-5xl md:text-6xl lg:text-[64px] leading-tight w-[90%] md:w-[910px] uppercase">
         Your State wide Dispatch Service
       </h1>
     </div>
