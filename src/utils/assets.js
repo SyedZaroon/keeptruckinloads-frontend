@@ -17,6 +17,7 @@ import contactimg from "/assets/contact.jpg";
 import aboutcargo from "/assets/aboutcargo.png";
 import aboutdetails from "/assets/aboutdetails.jpg";
 import servicearea from "/assets/servicearea.jpg";
+import Firstdays from "/assets/Firstdays.png";
 
 export const assets = {
   logo,
@@ -38,4 +39,5 @@ export const assets = {
   aboutcargo,
   aboutdetails,
   servicearea,
+  Firstdays,
 };

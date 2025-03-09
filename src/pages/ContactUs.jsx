@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <>
       <div
-        className="bg-[#006CB7] md:p-24 md:flex justify-between md:items-center md:flex-row flex-col p-12 relative bg-cover bg-center"
+        className="bg-[#006CB7] md:p-36 md:flex justify-between md:items-center md:flex-row flex-col p-12 relative bg-cover bg-center"
         style={{ backgroundImage: `url(${assets.contactimg})` }}
       >
         <div className="absolute inset-0 bg-black/50"></div>{" "}
@@ -38,19 +38,19 @@ const ContactUs = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-4">
+      <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-4 my-28">
         {/* Left Side: Image */}
         <div className="md:w-1/2 w-full">
           <img
-            src={assets.contactimg} // Replace with your actual image path
+            src={assets.Firstdays} // Replace with your actual image path
             alt="COVID-19 Test"
             className="w-full h-auto rounded-lg"
           />
-          <img
+          {/* <img
             src={assets.servicearea} // Replace with your actual image path
             alt="COVID-19 Test"
             className="w-full h-auto rounded-lg"
-          />
+          /> */}
         </div>
 
         {/* Right Side: Form */}
@@ -103,7 +103,7 @@ const ContactUs = () => {
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />
             <input
-              type="number"
+              type="date"
               placeholder="Wake up/FU"
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />

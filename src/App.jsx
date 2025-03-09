@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import NavBarBlack from "./components/NavBarBlack";
 import ContactUs from "./pages/ContactUs";
 import ContactForm from "./pages/ContactForm";
+import OnBoarding from "./pages/OnBoarding";
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/contactform" element={<ContactForm />} />
+        <Route path="/onboarding" element={<OnBoarding />} />
       </Routes>
 
       <Footer />

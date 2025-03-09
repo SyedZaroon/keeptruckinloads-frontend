@@ -57,9 +57,10 @@ const Footer = () => {
         <div className="container mx-auto py-32 px-20 grid grid-cols-1 md:grid-cols-4 ">
           {/* Logo and About */}
           <div>
-            <h2 className="text-2xl font-bold flex items-center gap-2 py-4">
+            <img src={assets.logo} alt="" />
+            {/* <h2 className="text-2xl font-bold flex items-center gap-2 py-4">
               Keep Truck In Load
-            </h2>
+            </h2> */}
             <p className="mt-3  py-2">
               Welcome and open yourself to your truest love this year with us!
               With the Release Process.
@@ -79,13 +80,13 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-3 py-4">Navigation</h3>
             <ul className=" space-y-2">
               <li className="hover:text-white cursor-pointer p-1">
-                - About us
+                <a href="/about">- About us</a>
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                - Contact us
+                <a href="/contact">- Contact us</a>
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                - Shop Page
+                <a href="/services">- Services</a>
               </li>
               <li className="hover:text-white cursor-pointer p-1">
                 - Recent Post
@@ -98,16 +99,28 @@ const Footer = () => {
             <h3 className="text-xl font-semibold mb-3 py-4">All Services</h3>
             <ul className=" space-y-2">
               <li className="hover:text-white cursor-pointer p-1">
-                - Air Transport
+                - Compliance & Safety
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                - Ocean Transport
+                - Fuel Optimization
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                - Road Transport
+                - Reavenue Growth
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                - Train Transport
+                - Dispatch Efficiency
+              </li>
+              <li className="hover:text-white cursor-pointer p-1">
+                - Financial Forecasting
+              </li>
+              <li className="hover:text-white cursor-pointer p-1">
+                - Driver Performance
+              </li>
+              <li className="hover:text-white cursor-pointer p-1">
+                - Web Development
+              </li>
+              <li className="hover:text-white cursor-pointer p-1">
+                - Direct Shipper Tenders
               </li>
             </ul>
           </div>
