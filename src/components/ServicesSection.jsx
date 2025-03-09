@@ -63,26 +63,6 @@ const ServicesSection = () => {
           </div>
 
           {/* Partnerships */}
-          {/* <div className="bg-white overflow-hidden">
-            <img
-              src={assets.post2}
-              alt="Partnerships"
-              className="w-full h-52 object-cover"
-            />
-            <div className="p-4 flex flex-col ">
-              <h3 className="text-[28px] text-left font-bold text-[#006CB7]">
-                Partnerships
-              </h3>
-              <p className="text-gray-600 text-left font-light ">
-                Build lasting partnerships with trusted carriers and shippers,
-                fostering a collaborative and successful network.
-              </p>
-              <Link className="text-left text-[#006cb7] font-light hidden hover:underline  ">
-                Read More
-              </Link>
-            </div>
-          </div> */}
-
           <div className="bg-white group relative transition-all flex  ">
             <img
               src={assets.post2}
@@ -123,8 +103,8 @@ const ServicesSection = () => {
               </Link>
             </div>
           </div>
-
-          {/* <div className="bg-white group relative transition-all flex  ">
+        </div>
+        {/* <div className="bg-white group relative transition-all flex  ">
             <img
               src={assets.post3}
               alt="Shipping Solutions"
@@ -143,7 +123,6 @@ const ServicesSection = () => {
               </Link>
             </div>
           </div> */}
-        </div>
       </section>
     </>
   );
