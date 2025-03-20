@@ -1,7 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import { assets } from "../utils/assets";
 
 const OnBoarding = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    city: "",
+    truck: "",
+    states: "",
+    weight: "",
+    wake: "",
+    mcnumber: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("http://localhost:5000/submit-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        alert("Form submitted successfully!");
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          city: "",
+          truck: "",
+          states: "",
+          weight: "",
+          wake: "",
+          mcnumber: "",
+        });
+      } else {
+        alert("Failed to submit form.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
+  };
+
   return (
     <>
       <div
@@ -11,8 +59,8 @@ const OnBoarding = () => {
         <div className="absolute inset-0 bg-black/50"></div>{" "}
         {/* Overlay for better readability */}
         <div className="md:w-[40%] relative z-10">
-          <h2 className="text-4xl md:text-4xl font-bold text-left text-white">
-            Contact Us
+          <h2 className="text-4xl md:text-6xl font-bold text-left text-white">
+            ON Boarding
           </h2>
           <p className="text-white my-4">
             {/* Keeptruckin Loads is your partner in maximizing trucking profits. We
@@ -26,7 +74,7 @@ const OnBoarding = () => {
             href=""
             className="hover:shadow-md hover:translate-y-1 transition-all text-white"
           >
-            Home // <span> Contact</span>
+            Home // <span> OnBoarding</span>
           </a>
 
           {/* <a
@@ -61,7 +109,7 @@ const OnBoarding = () => {
             call us at <strong>NO</strong>.
           </p>
 
-          <form className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4">
             {/* <input
                   type="text"
                   placeholder="Your Name"
@@ -69,46 +117,82 @@ const OnBoarding = () => {
                 /> */}
             <input
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
               placeholder="Full Name"
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
               placeholder="Email"
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />
             <input
               type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
               placeholder="Phone"
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />
             <input
               type="text"
+              name="city"
+              value={formData.city}
+              onChange={handleChange}
+              required
               placeholder="Based (City/State)"
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />
             <input
               type="text"
+              name="truck"
+              value={formData.truck}
+              onChange={handleChange}
+              required
               placeholder="Truck"
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />
             <input
               type="text"
+              name="states"
+              value={formData.states}
+              onChange={handleChange}
+              required
               placeholder="Preferred states"
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />
             <input
               type="number"
+              name="weight"
+              value={formData.weight}
+              onChange={handleChange}
+              required
               placeholder="Preferred weight (lbs)"
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />
             <input
               type="date"
+              name="wake"
+              value={formData.wake}
+              onChange={handleChange}
+              required
               placeholder="Wake up/FU"
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />
             <input
               type="number"
+              name="mcnumber"
+              value={formData.mcnumber}
+              onChange={handleChange}
+              required
               placeholder="MC number"
               class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:[#006CB7]"
             />

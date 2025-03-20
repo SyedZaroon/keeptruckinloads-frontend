@@ -17,13 +17,13 @@ function App() {
 
   return (
     <div>
-      {location.pathname === "/" ? <NavBar /> : ""}
+      {location.pathname === "/" ? <NavBar /> : <NavBarBlack />}
 
       {location.pathname === "/" ? <Header /> : <HeaderBlack />}
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/contactform" element={<ContactForm />} />

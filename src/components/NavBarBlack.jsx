@@ -1,36 +1,36 @@
 import React from "react";
+import { FaEnvelope, FaFacebookF, FaPhoneAlt } from "react-icons/fa";
 import {
-  FaEnvelope,
-  FaFacebook,
-  FaFacebookF,
-  FaGooglePlus,
-  FaGooglePlusG,
-  FaInstagram,
-  FaPhoneAlt,
-  FaWhatsapp,
-  FaWhatsappSquare,
+  FaTwitter,
+  FaLinkedinIn,
+  FaPinterestP,
+  FaVimeoV,
 } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
 
 const NavBar = () => {
   return (
-    <div className="md:flex justify-between items-center border-b-2 border-black max-w-[944px] m-auto my-3 z-50 relative px-4 hidden ">
-      <div className="flex items-center gap-2">
-        <FaPhoneAlt className="text-black" />
-        <span className="text-black">+888-258-5623</span>
-      </div>
+    <div className="bg-[#0D2A41]">
+      <div className="md:flex justify-between items-center  text-white max-w-[1220px] m-auto py-2 ">
+        <div className="flex gap-4">
+          <div className="flex items-center gap-2">
+            <FaPhoneAlt className="" />
+            <span className="">+888-258-5623</span>
+          </div>
 
-      <div className="flex items-center gap-2">
-        <FaEnvelope className="text-black" />
-        <span className="text-black">info@ktloads.com</span>
-      </div>
+          <div className="flex items-center gap-2">
+            <FaEnvelope className="" />
+            <span className="">info@ktloads.com</span>
+          </div>
+        </div>
 
-      <div className="flex items-center gap-2">
-        <FaFacebookF className="text-black" />
-        <FaXTwitter className="text-black" />
-        <FaInstagram className="text-black" />
-        <FaGooglePlusG className="text-black" />
-        <FaWhatsapp className="text-black" />
+        {/* Social Media Icons */}
+        <div className="flex gap-4">
+          <FaFacebookF className="cursor-pointer hover:text-gray-400" />
+          <FaTwitter className="cursor-pointer hover:text-gray-400" />
+          <FaLinkedinIn className="cursor-pointer hover:text-gray-400" />
+          <FaPinterestP className="cursor-pointer hover:text-gray-400" />
+          <FaVimeoV className="cursor-pointer hover:text-gray-400" />
+        </div>
       </div>
     </div>
   );

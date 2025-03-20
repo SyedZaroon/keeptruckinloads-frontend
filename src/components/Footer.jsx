@@ -1,16 +1,5 @@
 import React from "react";
 import { assets } from "../utils/assets";
-// import {
-//   FaBars,
-//   FaClock,
-//   FaEnvelope,
-//   FaFacebookF,
-//   FaGooglePlusG,
-//   FaInstagram,
-//   FaPhone,
-//   FaWhatsapp,
-// } from "react-icons/fa";
-// import { FaXTwitter } from "react-icons/fa6";
 import {
   FaLocationArrow,
   FaEnvelope,
@@ -30,7 +19,7 @@ const Footer = () => {
     <>
       <footer className="bg-[#0D2A41] text-white relative">
         {/* Top Section */}
-        <div className="">
+        <div className="hidden md:block">
           <div className="bg-[#123B56] py-12 px-24 max-w-[1140px] absolute right-32 left-32 top-[-60px] rounded-full flex flex-col md:flex-row justify-between items-center text-sm">
             <div className="flex items-center gap-2">
               <FaLocationArrow className="text-xl" />
@@ -76,44 +65,44 @@ const Footer = () => {
           </div>
 
           {/* Navigation */}
-          <div className="text-center">
-            <h3 className="text-xl font-semibold mb-3 py-4">Navigation</h3>
+          <div className="px-16">
+            <h3 className="text-xl font-semibold mb-3 pb-4">Navigation</h3>
             <ul className=" space-y-2">
               <li className="hover:text-white cursor-pointer p-1">
-                <a href="/about">- About us</a>
+                <a href="/about"> About us</a>
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                <a href="/contact">- Contact us</a>
+                <a href="/contact"> Contact us</a>
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                <a href="/services">- Services</a>
+                <a href="/services"> Services</a>
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                - Recent Post
+                Recent Post
               </li>
             </ul>
           </div>
 
           {/* Services */}
-          <div className="text-center">
-            <h3 className="text-xl font-semibold mb-3 py-4">All Services</h3>
+          <div className="">
+            <h3 className="text-xl font-semibold mb-3 pb-4">All Services</h3>
             <ul className=" space-y-2">
               <li className="hover:text-white cursor-pointer p-1">
-                - Compliance & Safety
+                Compliance & Safety
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                - Fuel Optimization
+                Fuel Optimization
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                - Reavenue Growth
+                Reavenue Growth
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                - Dispatch Efficiency
+                Dispatch Efficiency
               </li>
               <li className="hover:text-white cursor-pointer p-1">
-                - Financial Forecasting
+                Financial Forecasting
               </li>
-              <li className="hover:text-white cursor-pointer p-1">
+              {/* <li className="hover:text-white cursor-pointer p-1">
                 - Driver Performance
               </li>
               <li className="hover:text-white cursor-pointer p-1">
@@ -121,13 +110,13 @@ const Footer = () => {
               </li>
               <li className="hover:text-white cursor-pointer p-1">
                 - Direct Shipper Tenders
-              </li>
+              </li> */}
             </ul>
           </div>
 
           {/* Newsletter */}
-          <div className="text-center">
-            <h3 className="text-xl font-semibold mb-3 py-4">Newsletter</h3>
+          <div className="">
+            <h3 className="text-xl font-semibold mb-3 pb-4">Newsletter</h3>
             <p className=" mb-4">
               Etiam sed est eu tempus need Temer diam congue laoret cursus nam
               nunc fam interdum Viverra.
@@ -144,12 +133,17 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
         {/* Copyright Section */}
         <div className="border-t border-gray-600 py-4 text-center flex flex-col md:flex-row justify-between items-center px-24  text-sm">
           <span>
             Copyright ©{" "}
             <span className="text-[#006cb7]">{new Date().getFullYear()}</span> |
-            All Rights Reserved.
+            KeepTruckin Loads | All Rights Reserved | Developed by{" "}
+            <a href="https://pakalfa.com/" className="text-[#006cb7]">
+              {" "}
+              Pakalfa
+            </a>
           </span>
           <div className="flex gap-3">
             <span className="cursor-pointer hover:text-white">
